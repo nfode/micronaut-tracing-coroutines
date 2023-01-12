@@ -5,7 +5,8 @@
         <!-- encoders are assigned the type
              ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
         <encoder>
-            <pattern>%cyan(%d{HH:mm:ss.SSS}) %gray([%thread])[%X] %highlight(%-5level) %magenta(%logger{36}) - %msg%n</pattern>
+            <pattern>%cyan(%d{HH:mm:ss.SSS}) %gray([%thread])[%X] %highlight(%-5level) %magenta(%logger{36}) - %msg%n
+            </pattern>
         </encoder>
     </appender>
 
@@ -14,7 +15,6 @@
     </appender>
 
     <root level="debug">
-        <appender-ref ref="OTEL" />
-<!--        <appender-ref ref="STDOUT" />-->
+        <appender-ref ref="OTEL"/>
     </root>
 </configuration>
