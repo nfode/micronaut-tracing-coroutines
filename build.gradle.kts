@@ -38,23 +38,10 @@ dependencies {
     implementation("io.micronaut.tracing:micronaut-tracing-core")
     implementation("io.micronaut.tracing:micronaut-tracing-opentelemetry-http")
     implementation("io.opentelemetry.instrumentation:opentelemetry-logback-mdc-1.0")
-    annotationProcessor("io.micronaut.tracing:micronaut-tracing-opentelemetry-annotation")
-    implementation("io.opentelemetry:opentelemetry-exporter-logging")
-
-    implementation("ch.qos.logback:logback-classic")
-    implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.13.3")
-    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.13.3")
-
-    implementation("net.logstash.logback:logstash-logback-encoder:6.6")
 
     implementation("io.github.microutils:kotlin-logging:2.1.21")
 
-
-
-
-
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
-
 }
 
 

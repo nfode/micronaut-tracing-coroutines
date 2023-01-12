@@ -5,8 +5,3 @@ netty:
   default:
     allocator:
       max-order: 3
-tracing:
-  instrument-threads: true
-otel:
-  traces:
-    exporter: logging
