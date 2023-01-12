@@ -9,12 +9,7 @@
         </encoder>
     </appender>
 
-    <appender name="OTEL" class="io.opentelemetry.instrumentation.logback.v1_0.OpenTelemetryAppender">
-        <appender-ref ref="STDOUT"/>
-    </appender>
-
     <root level="debug">
-        <appender-ref ref="OTEL" />
-<!--        <appender-ref ref="STDOUT" />-->
+        <appender-ref ref="STDOUT" />
     </root>
 </configuration>
